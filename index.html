@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://evruno.in/">
 
-    <link rel="icon" type="image/png" href="assets/images/evruno-logo.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/evruno-logo.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/evruno-icons.css">
 </head>
 
 <body>
@@ -32,13 +33,15 @@
     <div class="background-glow"></div>
     <div class="grid-overlay"></div>
 
+
+
     <!-- Navigation -->
     <header class="header" id="header">
 
         <nav class="navbar container">
 
             <a href="#" class="brand" aria-label="EVRUNO Home">
-                <img src="assets/images/evruno-logo.png" alt="EVRUNO Logo" class="brand-logo">
+                <img src="assets/images/evruno-logo.svg" alt="EVRUNO Logo" class="brand-logo">
                 <span>EVRUNO</span>
             </a>
 
@@ -70,8 +73,18 @@
 
     <main>
 
+        <section class="hero section" id="home">
+            <div class="logo-container">
+                <p class="love-note">I love you Kannu <span class="heart">❤️</span></p>
+            </div>
+        </section>
+
+
+
         <!-- HERO SECTION -->
         <section class="hero section" id="home">
+
+
 
             <div class="container hero-container">
 
@@ -128,12 +141,14 @@
 
                     <div class="visual-core">
 
-                        <img src="assets/images/evruno-logo.png" alt="EVRUNO symbol" class="hero-logo">
+                        <img src="assets/images/evruno-transparent-symbol.svg" alt="EVRUNO symbol" class="hero-logo">
 
                     </div>
 
                     <div class="floating-card card-top">
-                        <span class="floating-icon">✳</span>
+                        <span class="value-icon" aria-hidden="true">
+                            <img src="assets/icons/evruno-innovation.svg" class="evruno-icon" width="48" height="48" alt="">
+                        </span>
                         <div>
                             <strong>Innovation</strong>
                             <small>Ideas into reality</small>
@@ -141,7 +156,9 @@
                     </div>
 
                     <div class="floating-card card-bottom">
-                        <span class="floating-icon">⌘</span>
+                        <span class="value-icon" aria-hidden="true">
+                            <img src="assets/icons/evruno-engineering.svg" class="evruno-icon" width="48" height="48" alt="">
+                        </span>
                         <div>
                             <strong>Engineering</strong>
                             <small>Technology with purpose</small>
@@ -245,7 +262,9 @@
 
                         <div class="service-top">
                             <span class="service-number">01</span>
-                            <span class="service-icon">⌘</span>
+                            <span class="service-icon" aria-hidden="true">
+                                <img src="assets/icons/evruno-custom-software-development.svg" class="evruno-icon" width="48" height="48" alt="">
+                            </span>
                         </div>
 
                         <h3>Custom Software Development</h3>
@@ -267,7 +286,9 @@
 
                         <div class="service-top">
                             <span class="service-number">02</span>
-                            <span class="service-icon">◈</span>
+                            <span class="service-icon" aria-hidden="true">
+                                <img src="assets/icons/evruno-web-application-development.svg" class="evruno-icon" width="48" height="48" alt="">
+                            </span>
                         </div>
 
                         <h3>Web Application Development</h3>
@@ -289,7 +310,9 @@
 
                         <div class="service-top">
                             <span class="service-number">03</span>
-                            <span class="service-icon">⌘</span>
+                            <span class="service-icon" aria-hidden="true">
+                                <img src="assets/icons/evruno-it-solutions-consulting.svg" class="evruno-icon" width="48" height="48" alt="">
+                            </span>
                         </div>
 
                         <h3>IT Solutions & Consulting</h3>
@@ -311,7 +334,9 @@
 
                         <div class="service-top">
                             <span class="service-number">04</span>
-                            <span class="service-icon">✳</span>
+                            <span class="service-icon" aria-hidden="true">
+                                <img src="assets/icons/evruno-digital-innovation.svg" class="evruno-icon" width="48" height="48" alt="">
+                            </span>
                         </div>
 
                         <h3>Digital Innovation</h3>
@@ -486,6 +511,7 @@
 
                     <h2>
                         More than technology.
+                        <br />
                         <span class="gradient-text">
                             A thoughtful approach.
                         </span>
@@ -496,7 +522,9 @@
                 <div class="values-grid">
 
                     <div class="value-item reveal">
-                        <span class="value-icon">◇</span>
+                        <span class="value-icon" aria-hidden="true">
+                            <img src="assets/icons/evruno-purpose-driven.svg" class="evruno-icon" width="48" height="48" alt="">
+                        </span>
                         <h3>Purpose-Driven</h3>
                         <p>
                             We start by understanding the
@@ -505,7 +533,9 @@
                     </div>
 
                     <div class="value-item reveal">
-                        <span class="value-icon">⌘</span>
+                        <span class="value-icon" aria-hidden="true">
+                            <img src="assets/icons/evruno-engineering-focus.svg" class="evruno-icon" width="48" height="48" alt="">
+                        </span>
                         <h3>Engineering Focus</h3>
                         <p>
                             We value clean architecture,
@@ -514,7 +544,9 @@
                     </div>
 
                     <div class="value-item reveal">
-                        <span class="value-icon">↗</span>
+                        <span class="value-icon" aria-hidden="true">
+                            <img src="assets/icons/evruno-future-ready.svg" class="evruno-icon" width="48" height="48" alt="">
+                        </span>
                         <h3>Future-Ready</h3>
                         <p>
                             We embrace continuous learning
@@ -523,7 +555,9 @@
                     </div>
 
                     <div class="value-item reveal">
-                        <span class="value-icon">◎</span>
+                        <span class="value-icon" aria-hidden="true">
+                            <img src="assets/icons/evruno-people-first.svg" class="evruno-icon" width="48" height="48" alt="">
+                        </span>
                         <h3>People First</h3>
                         <p>
                             We believe successful technology
@@ -563,7 +597,7 @@
                         love to hear from you.
                     </p>
 
-                    <a href="mailto:contact@evruno.in" class="btn btn-primary">
+                    <a href="mailto:yashraut142@gmail.com" class="btn btn-primary">
                         Start a Conversation
                         <span>↗</span>
                     </a>
@@ -587,7 +621,7 @@
                 <div class="footer-brand">
 
                     <a href="#" class="brand">
-                        <img src="assets/images/evruno-logo.png" alt="EVRUNO Logo" class="brand-logo">
+                        <img src="assets/images/evruno-logo.svg" alt="EVRUNO Logo" class="brand-logo">
 
                         <span>EVRUNO</span>
                     </a>

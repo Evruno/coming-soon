@@ -82,6 +82,33 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
+/* Keeps the logo and the message centered together */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Gap between the logo and the text */
+}
+
+/* Styles the cute message */
+.love-note {
+  font-family: 'Courier New', Courier, monospace; /* Keeps it looking like a sweet typed note */
+  font-size: 0.95rem;
+  color: #e63946; /* A soft, romantic red/pink */
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Makes the heart gently beat */
+.heart {
+  display: inline-block;
+  animation: heartbeat 1.2s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
 
 /* BACKGROUND EFFECTS */
 
@@ -233,6 +260,7 @@ img {
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
     gap: 40px;
+    padding-inline: 35px;
 }
 
 .eyebrow,
@@ -362,9 +390,9 @@ img {
 
 .hero-logo {
     width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 20%;
 }
 
 .visual-glow {
@@ -1160,3 +1188,16 @@ img {
     }
 
 }
+
+@media (max-width: 1000px) {
+    .hero-container {
+        padding-inline: 15px;
+    }
+}
+
+@media (max-width: 760px) {
+    .hero-container {
+        padding-inline: 0;
+    }
+}
+
